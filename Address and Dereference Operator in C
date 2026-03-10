@@ -1,0 +1,68 @@
+Address and Dereference Operators in C
+
+To understand pointers, we first need to know about two operators that are extensively used while working with pointers. They are:
+
+Addressof operator (&)
+Dereference operator (*)
+
+Addressof Operator (&)
+The address-of operator is denoted by & ampersand symbol and gives you the memory address of a given variable when placed before a variable name as shown:
+& var_name
+
+Dereference Operator (*)
+The dereference operator is denoted by * asterisk symbol and gives you the value stored at a given memory address stored inside a pointer. It is also placed before the pointer name as shown:
+
+ptr_name
+The asterisk (*) serves multiple purposes in C:
+
+As a dereference operator (unary operator)
+As a multiplication operator (binary operator)
+In pointer declaration (syntax, not an operator)
+
+Example
+
+#include <stdio.h>
+int main()
+{
+    int x = 10;
+    printf("%p\n", &x);
+    printf("%d", *&x);
+    return 0;
+}
+Output
+0x7ffd31c1ac1c
+10
+In this program, &x gives the memory address of the variable x. The * before &x dereferences that address to retrieve the value stored at the address, which is 10. Essentially, *&x first gets the address of x and then retrieves the value from that address, which results in printing 10.
+
+Note: The actual addresses may vary between different program runs or on different machines because variables might be stored at different memory locations each time the program executes
+
+The addressof operator and dereference operator works opposite to each other. One gives you that address of a variable and other gives you value stored at address. They can also be combined with each other. For example, &*&x will give you the address.
+
+Application of Pointers in C
+
+Pointers are of the core features of C that forms the backbone of low-level memory access and have a lot of practical applications. Let's take a look at some of the main uses of pointers in C:
+
+1. Changing Passed Parameters
+In C, by default, parameters passed to functions are passed by value. Whatever change is done to them inside the function does not affect the actual variable. Pointers are used when the need is to modify the variables inside a function. Languages like C++ and Java support references for such purposes, but C only uses pointers.
+
+2. Passing Large Objects Efficiently
+In C, passing a large object to functions by value leads to the creation of a copy of the entire object into the function's local variable, which is very inefficient. Pointers solve this problem by passing the address of the object, allowing the function to access it directly without copying.
+
+3. Dynamic Memory Allocation
+Dynamic memory allocation and deallocation in C allow programmers to allocate memory during runtime and release it when no longer needed. Pointers store the address of dynamically allocated memory.
+
+4. Implementing Data Structures
+Data structures like linked lists, trees, and graphs often require nodes that are not stored contiguously in memory. Pointers help link these nodes by storing the address of the next node thus allows the creation of dynamic and flexible data structures in C.
+
+5. System-Level Programming
+Pointers plays a major role in multi-threading and inter-process communication. They take care of the shared memory blocks in case multiple processes access them.
+
+6. Returning Multiple Values from Functions
+C functions typically return a single value. However multiple values can be returned by passing the addresses of the variables to the function and storing it in a pointer.
+
+7. Accessing Array Elements
+Internally, C uses pointer arithmetic to access elements of arrays. Understanding the relationship between arrays and pointers allows the users to direct access to array elements from anywhere if they have the address.
+
+8. Passing Arrays to Functions
+Passing large arrays by value in C is inefficient, as it requires copying the entire array. Instead, arrays are passed as pointers, where only the address of the first element is passed, allowing functions to work with the original array efficiently.
+
