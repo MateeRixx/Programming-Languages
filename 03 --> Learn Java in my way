@@ -1,0 +1,33 @@
+𝟯𝗿𝗱 𝘀𝗲𝗺𝗲𝘀𝘁𝗲𝗿 𝗺𝗲 𝗲𝗸 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗮𝗮𝘆𝗮: -𝟭𝟯 × -𝟴
+
+𝗜 𝗹𝗮𝘂𝗴𝗵𝗲𝗱 𝘀𝗶𝘁𝘁𝗶𝗻𝗴 𝗶𝗻 𝘁𝗵𝗲 𝗲𝘅𝗮𝗺 𝗵𝗮𝗹𝗹.
+
+"Bhai, calculator hai toh yeh manually kyun karna hai?"
+
+But the real question I had wasn't about the answer.
+
+𝗜𝘁 𝘄𝗮𝘀 — 𝘄𝗵𝘆 𝗶𝘀 𝗮 𝗖𝗦 𝘀𝘁𝘂𝗱𝗲𝗻𝘁 𝗱𝗼𝗶𝗻𝗴 𝘁𝗵𝗶𝘀?
+
+My professor couldn't explain it in a way that clicked. The syllabus felt disconnected. Digital Design felt like a punishment, not a subject.
+
+So I did what most of us do — ratta maaro, pass karo, bhool jao.
+
+𝗙𝗮𝘀𝘁 𝗳𝗼𝗿𝘄𝗮𝗿𝗱 𝘁𝗼 𝗹𝗮𝘀𝘁 𝘄𝗲𝗲𝗸.
+
+I finally understood how computers actually store negative numbers using 𝗧𝘄𝗼'𝘀 𝗖𝗼𝗺𝗽𝗹𝗲𝗺𝗲𝗻𝘁. How floating point numbers are represented in binary. How your CPU — right now, as you read this — is doing billions of these "useless" calculations every single second.
+
+That -13 × -8 question?
+
+It wasn't testing math.
+
+𝗜𝘁 𝘄𝗮𝘀 𝘁𝗲𝘀𝘁𝗶𝗻𝗴 𝘄𝗵𝗲𝘁𝗵𝗲𝗿 𝗜 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝗵𝗼𝘄 𝗮 𝗺𝗮𝗰𝗵𝗶𝗻𝗲 𝘁𝗵𝗶𝗻𝗸𝘀.
+
+And suddenly — everything connected.
+
+Why C language has int, float, double with different memory sizes.
+Why integer overflow is a real bug that crashes real software.
+Why understanding bits makes you a better programmer, not just a better student.
+
+𝗧𝗵𝗲 𝗽𝗿𝗼𝗯𝗹𝗲𝗺 𝘄𝗮𝘀 𝗻𝗲𝘃𝗲𝗿 𝘁𝗵𝗲 𝘀𝘂𝗯𝗷𝗲𝗰𝘁.
+The problem was that nobody showed us the bridge between theory and application.
+
