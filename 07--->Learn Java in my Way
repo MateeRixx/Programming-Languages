@@ -1,0 +1,27 @@
+𝗔𝗿𝗿𝗮𝘆𝘀 𝗵𝗶𝘁 𝗱𝗶𝗳𝗳𝗲𝗿𝗲𝗻𝘁 𝘄𝗵𝗲𝗻 𝘆𝗼𝘂 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝘄𝗵𝗮𝘁'𝘀 𝗵𝗮𝗽𝗽𝗲𝗻𝗶𝗻𝗴 𝘂𝗻𝗱𝗲𝗿 𝘁𝗵𝗲 𝗵𝗼𝗼𝗱. 
+
+Most people use arrays like a black box.
+I decided to open it.
+
+𝗛𝗲𝗿𝗲'𝘀 𝘄𝗵𝗮𝘁 𝗜 𝗹𝗲𝗮𝗿𝗻𝗲𝗱: 
+📦 𝗪𝗵𝗮𝘁 𝗶𝘀 𝗮𝗻 𝗔𝗿𝗿𝗮𝘆 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹𝗹𝘆?
+
+When you write int[] arr = new int[5], Java asks the OS for a contiguous block of memory.
+Not scattered. Not random. A straight line of memory addresses.
+
+𝗧𝗵𝗮𝘁'𝘀 𝘄𝗵𝘆:
+→ arr[0] is blazing fast (direct address calculation)
+→ arr[index] = base address + (index × size of datatype)
+No searching. Pure math. O(1) access. ⚡
+
+
+🧊 𝗠𝘂𝗹𝘁𝗶𝗱𝗶𝗺𝗲𝗻𝘀𝗶𝗼𝗻𝗮𝗹 𝗔𝗿𝗿𝗮𝘆𝘀 — 𝘁𝗵𝗲 𝗿𝗲𝗮𝗹 𝗽𝗶𝗰𝘁𝘂𝗿𝗲 𝗔 𝗶𝗻𝘁[𝟯][𝟰] 𝗶𝘀 𝗡𝗢𝗧 𝗮 𝗴𝗿𝗶𝗱 𝗶𝗻 𝗺𝗲𝗺𝗼𝗿𝘆.
+It's actually an array of references — each pointing to a separate 1D array.
+Java stores them as:
+arr[0] → [_, _, _, _]
+arr[1] → [_, _, _, _]
+arr[2] → [_, _, _, _]
+This is why jagged arrays are possible in Java (unlike C).
+
+You can have arr[0] with 3 elements and arr[1] with 10. Mind = blown. 🤯
+
