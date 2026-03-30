@@ -1,0 +1,32 @@
+𝗝𝗮𝘃𝗮'𝘀 𝗜𝗺𝗽𝗹𝗶𝗰𝗶𝘁 (𝗔𝘂𝘁𝗼𝗺𝗮𝘁𝗶𝗰) 𝗧𝘆𝗽𝗲 𝗖𝗼𝗻𝘃𝗲𝗿𝘀𝗶𝗼𝗻 𝗵𝗮𝘀 𝗮 𝗵𝗶𝗱𝗱𝗲𝗻 𝗿𝘂𝗹𝗲:
+👉 𝗧𝗵𝗲 𝗱𝗲𝘀𝘁𝗶𝗻𝗮𝘁𝗶𝗼𝗻 𝗱𝗮𝘁𝗮 𝘁𝘆𝗽𝗲 𝗠𝗨𝗦𝗧 𝗯𝗲 𝘄𝗶𝗱𝗲𝗿 𝘁𝗵𝗮𝗻 𝘁𝗵𝗲 𝘀𝗼𝘂𝗿𝗰𝗲 𝗱𝗮𝘁𝗮 𝘁𝘆𝗽𝗲.
+
+That's it. That's the rule.
+int → long ✅
+double → float ❌
+byte → int ✅
+long → int ❌
+
+Java is silently protecting you from data loss — but only when it CAN.
+
+𝗦𝗼 𝘄𝗵𝗮𝘁 𝗵𝗮𝗽𝗽𝗲𝗻𝘀 𝘄𝗵𝗲𝗻 𝘁𝗵𝗲 𝗱𝗲𝘀𝘁𝗶𝗻𝗮𝘁𝗶𝗼𝗻 𝗶𝘀 𝗡𝗔𝗥𝗥𝗢𝗪𝗘𝗥?
+
+Java refuses to do it automatically.
+You have to use Explicit (Narrowing) Conversion — also called Truncating Conversion — where YOU take responsibility.
+
+double price = 9.99;
+int truncated = (int) price;
+
+No error. No warning. Just silent data loss if you're not careful.
+The mental model that finally made it click for me:
+Think of data types like containers 🫙
+
+Pouring water from a small cup → big jar = safe ✅ (𝗶𝗺𝗽𝗹𝗶𝗰𝗶𝘁)
+Pouring water from a big jar → small cup = spillage ⚠️ (explicit, you choose to risk it)
+Java won't spill your water without your permission.
+
+The 3-line summary:
+✅ 𝗪𝗶𝗱𝗲𝗻𝗶𝗻𝗴 = 𝗜𝗺𝗽𝗹𝗶𝗰𝗶𝘁 = 𝗝𝗮𝘃𝗮 𝗱𝗼𝗲𝘀 𝗶𝘁 𝗳𝗼𝗿 𝘆𝗼𝘂
+⚠️ 𝗡𝗮𝗿𝗿𝗼𝘄𝗶𝗻𝗴 = 𝗘𝘅𝗽𝗹𝗶𝗰𝗶𝘁 = 𝗬𝗢𝗨 𝗰𝗮𝘀𝘁 𝗶𝘁, 𝗬𝗢𝗨 𝗼𝘄𝗻 𝘁𝗵𝗲 𝗿𝗲𝘀𝘂𝗹𝘁
+🚫 𝗡𝗼 𝘀𝗵𝗼𝗿𝘁𝗰𝘂𝘁 𝗲𝘅𝗶𝘀𝘁𝘀 𝘁𝗼 𝗮𝘃𝗼𝗶𝗱 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱𝗶𝗻𝗴 𝘁𝗵𝗶𝘀
+
