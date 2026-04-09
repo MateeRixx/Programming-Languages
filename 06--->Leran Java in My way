@@ -1,0 +1,29 @@
+𝗠𝗼𝘀𝘁 𝗽𝗲𝗼𝗽𝗹𝗲 𝗹𝗲𝗮𝗿𝗻 𝗶𝗳-𝗲𝗹𝘀𝗲 𝗮𝗻𝗱 𝘀𝘁𝗼𝗽 𝘁𝗵𝗲𝗿𝗲.
+𝗕𝘂𝘁 𝘁𝗵𝗲 𝗿𝗲𝗮𝗹 𝗳𝘂𝗻 𝘀𝘁𝗮𝗿𝘁𝘀 𝘄𝗵𝗲𝗻 𝘆𝗼𝘂 𝗱𝗲𝗲𝗽𝗹𝘆 𝘂𝗻𝗱𝗲𝗿𝘀𝘁𝗮𝗻𝗱 𝗵𝗼𝘄 𝘀𝘄𝗶𝘁𝗰𝗵 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝘄𝗼𝗿𝗸𝘀 𝗶𝗻𝘁𝗲𝗿𝗻𝗮𝗹𝗹𝘆.
+
+𝗪𝗵𝗶𝗹𝗲 𝘀𝘁𝘂𝗱𝘆𝗶𝗻𝗴 𝗰𝗼𝗻𝘁𝗿𝗼𝗹 𝗳𝗹𝗼𝘄, 𝗜 𝗿𝗲𝗮𝗹𝗶𝘇𝗲𝗱 𝘀𝗼𝗺𝗲𝘁𝗵𝗶𝗻𝗴 𝗽𝗼𝘄𝗲𝗿𝗳𝘂𝗹 👇 𝘀𝘄𝗶𝘁𝗰𝗵 𝗶𝘀 𝗻𝗼𝘁 𝗷𝘂𝘀𝘁 𝗮 𝗰𝗹𝗲𝗮𝗻𝗲𝗿 𝘃𝗲𝗿𝘀𝗶𝗼𝗻 𝗼𝗳 𝗶𝗳-𝗲𝗹𝘀𝗲. 𝗨𝗻𝗱𝗲𝗿 𝘁𝗵𝗲 𝗵𝗼𝗼𝗱, 𝗶𝗻 𝗹𝗮𝗻𝗴𝘂𝗮𝗴𝗲𝘀 𝗹𝗶𝗸𝗲 𝗝𝗮𝘃𝗮 𝗮𝗻𝗱 𝗖:
+
+• For dense integer cases → compilers often use a jump table
+• For sparse cases → they may use a lookup or binary search strategy
+• For strings → hashing is applied first, then mapped internally
+
+That means in many cases, switch can be more efficient than multiple if-else comparisons because it can directly jump to the matching case instead of checking every condition sequentially.
+
+This is not just syntax. This is about understanding how compilers think.
+
+𝗡𝗼𝘄 𝗰𝗼𝗺𝗶𝗻𝗴 𝘁𝗼 𝗹𝗼𝗼𝗽𝘀.
+While learning loops, I realized something even more underrated:
+break and continue are not small keywords. They are control flow accelerators.
+• break → Immediately exits the loop (saves unnecessary iterations)
+• continue → Skips current iteration (optimizes conditional logic)
+
+In competitive programming, interviews, and real-world backend systems — using these properly can improve both readability and performance clarity.
+
+Many beginners focus on writing loops. Few focus on controlling loops efficiently.
+That difference matters.
+Programming is not about memorizing syntax. It’s about understanding execution flow.
+When you understand: • How branching works internally
+• How loops are controlled
+• How compilers optimize decisions
+You start thinking like a problem solver, not just a coder.
+
